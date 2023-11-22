@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="TestNG1">
+        <parameter name="path" value="D:/work/vscode/Code/res/mypictures/Test1.svg"></parameter>
+        <classes>
+            <class name="org.apache.commons.mail.MultiPartEmailTestNG">
+                <methods>
+                    <include name="testAttach"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="TestNG2">
+        <parameter name="path" value="D:/work/vscode/Code/res/mypictures/Test2.svg"></parameter>
+        <classes>
+            <class name="org.apache.commons.mail.MultiPartEmailTestNG">
+                <methods>
+                    <include name="testAttach"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
