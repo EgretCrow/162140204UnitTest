@@ -21,7 +21,7 @@ public class MultiPartEmailTest {
 //        MultiPartEmail multiPartEmail = new MultiPartEmail();
         multiPartEmail.setHostName("smtp.qq.com");
         multiPartEmail.setSmtpPort(465);
-        multiPartEmail.setAuthenticator(new DefaultAuthenticator("2398491106@qq.com", "dyruxoahssxrdhif"));
+        multiPartEmail.setAuthenticator(new DefaultAuthenticator("2398491106@qq.com", "hfadqgkbsroqebih"));
         multiPartEmail.setSSLOnConnect(true);
         multiPartEmail.addTo("2398491106@qq.com", "Me");
         multiPartEmail.setFrom("2398491106@qq.com", "TestRobot");
@@ -48,9 +48,9 @@ public class MultiPartEmailTest {
         try{
             multiPartEmail.attach(attachment);  //添加附件
         }catch (EmailException e){
-            assertEquals(file.exists(),false);
+            assertEquals(false,file.exists());
         }
-        assertEquals(file.exists(),true);
+        assertEquals(true,file.exists());
         multiPartEmail.send();  //发送邮件
     }
 

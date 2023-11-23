@@ -17,7 +17,7 @@ public class MultiPartEmailTestNG {
         File file;
         multiPartEmail.setHostName("smtp.qq.com");
         multiPartEmail.setSmtpPort(465);
-        multiPartEmail.setAuthenticator(new DefaultAuthenticator("2398491106@qq.com", "dyruxoahssxrdhif"));
+        multiPartEmail.setAuthenticator(new DefaultAuthenticator("2398491106@qq.com", "hfadqgkbsroqebih"));
         multiPartEmail.setSSLOnConnect(true);
         multiPartEmail.addTo("2398491106@qq.com", "Me");
         multiPartEmail.setFrom("2398491106@qq.com", "TestRobot");
