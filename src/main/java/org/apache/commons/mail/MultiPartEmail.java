@@ -317,7 +317,7 @@ public class MultiPartEmail extends Email
             {
                 fileName = attachment.getPath();
                 final File file = new File(fileName);
-                if (file.exists())//将file前的!去掉
+                if (!file.exists())//将file前的!去掉//缺陷处理
                 {
                     throw new IOException("\"" + fileName + "\" does not exist");
                 }
